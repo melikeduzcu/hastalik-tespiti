@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+
+:root {
+    --main-color: rgb(119, 9, 9);
+    --black-color: black;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    /*alttaki çizgileri siler */
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+    background-color: white;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 3rem;
+    background-color: black;
+}
+
+body {
+    background-color: var(--main-color);
+
+}
+
+section {
+    padding: 3.5rem 7%;
+}
+
+.btn {
+    margin: top 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    color: white;
+    background-color: var(--black-color);
+    cursor: pointer;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.logo img {
+    height: 7rem;
+}
+
+.heading {
+    color: white;
+    text-transform: capitalize;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid white;
+
+}
+
+
+.header.logo img {
+    height: 10rem;
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+}
+
+.header .navbar .active,
+.header .navbar a:hover {
+    border-color: yellow;
+    padding-bottom: 0.5rem;
+}
+
+.header .buttons button {
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+
+}
+
+
+.home {
+    min-height: 105vh;
+    background-image: url('hastalık.png');
+    background-size: cover;
+    background-position: center;
+    margin-top: -14.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h1 {
+    font-size: 6rem;
+    color: black;
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    font-weight: 400;
+    color: white;
+}
+
+.home .content p {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: white;
+}
+
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2 rem;
+
+}
+
+.about .row .content {
+    flex: 1 1 45 rem;
+
+}
+
+.about .row .content h3 {
+    font-size: 3rem;
+    color: white;
+}
+
+.about .row .content p {
+    font-size: 1.6rem;
+    color: white;
+    padding: 1rem 0;
+    line-height: 1.8rem;
+}
+
+.about .row .content li {
+    color: white;
+    font-size: medium;
+    padding: 1rem 0;
+    margin-left: 1%;
+}

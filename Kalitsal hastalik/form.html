@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test Giriş</title>
+    <meta charset="utf-8">
+</head>
+
+<body style="background-color: rgb(4, 16, 130); color: azure;" >
+    <h1><b><i>TAM KAN SAYIMI TEST GİRİŞ FORMU</i></b></h1>
+    <form action="kaydet.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend><b>Hasta Bilgileri</b></legend>
+            <table>
+                <tr>
+                    <td>Ad</td>
+                    <td>
+                        <input type="text" ıd="ad" name="ad" placeholder="Adınızı giriniz" required>
+                    </td>
+                </tr><br>
+                <tr>
+                    <td>Soyad</td>
+                    <td>
+                        <input type="text" ıd="soyad" name="soyad" placeholder="Soyadınızı giriniz" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Yaş</td>
+                    <td>
+                        <input type="number" ıd="yas" name="yas" max="100" min="0" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input type="email" id="email" name="email">
+                    </td>
+                </tr>
+            </table>
+        </fieldset><br>
+        <fieldset>
+            <legend><b>Kan Testi</b></legend>
+            <table>
+                <tr>
+                    <td>RDW</td>
+                    <td>
+                        <input type="number"  name="rdw" max="1000" min="0" required>
+                    </td><br>
+                </tr>
+                <tr>
+                    <td>PLT</td>
+                    <td>
+                        <input type="number" id="plt" name="plt" max="1000" min="0" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>MPV</td>
+                    <td>
+                        <input type="number" id="mpv" name="mpv" max="1000" min="0" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>PCT</td>
+                    <td>
+                        <input type="number" id="pct" name="pct" max="1000" min="0" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>PDW</td>
+                    <td>
+                        <input type="number" id="pdw" name="pdw" max="1000" min="0" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>SD</td>
+                    <td>
+                        <input type="number" id="sd" name="sd" max="1000" min="0" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>SDTSD</td>
+                    <td>
+                        <input type="number" ıd="sdtsd" name="sdtsd" max="1000" min="0" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>TSD</td>
+                    <td>
+                        <input type="number" ıd="tsd" name="tsd" max="1000" min="0" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>FERRITTE</td>
+                    <td>
+                        <input type="number" ıd="ferritte" name="ferritte" max="1000" min="0" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>FOLATE</td>
+                    <td>
+                        <input type="number" ıd="folate" name="folate" max="1000" min="0" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>B12</td>
+                    <td>
+                        <input type="number" ıd="b12" name="b12" max="1000" min="0" required>
+                    </td>
+                </tr>
+            </table>
+        </fieldset><br>
+        <fieldset>
+            <legend><b>Mail Listesi</b></legend><br>
+            Mail Listesine katılmak <b>istiyorum</b>
+            <input type="radio" id="mliste" name="mliste"><br><br>
+            Mail Listesine katılmak <b>istemiyorum</b>
+            <input type="radio" id="mliste" name="mliste">
+        </fieldset><br>
+        <fieldset>
+            <legend><b>Sözleşme Onay</b></legend><br>
+            <input type="checkbox" name="onay" id="onay" value="1" required>
+            <label for="onay">Yukarıdaki bilgilerin doğruluğunu kabul ediyorum ve onaylıyorum.</label><br><br>
+            <input type="submit" name="insert"  value="Formu Kaydet">
+            <input type="reset" name="btnT" id="btnT" value="Formu Temizle">
+        </fieldset>
+    </form><br>
+    <a href="home.html"><b>Anasayfaya Dön</b></a>
+</body>
+</html>
